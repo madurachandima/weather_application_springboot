@@ -1,4 +1,4 @@
-package com.madura.weather.application.controller.entities;
+package com.madura.weather.application.entities;
 
 import java.util.List;
 
@@ -9,6 +9,10 @@ public class Place {
         return data;
     }
 
+    public void setData(List<PlaceData> data) {
+        this.data = data;
+    }
+
     @Override
     public String toString() {
         return "Place{" +
@@ -16,4 +20,3 @@ public class Place {
                 '}';
     }
 }
-

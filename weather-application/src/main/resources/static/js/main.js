@@ -13,12 +13,11 @@ function getCoordinate() {
 }
 
 function searchByCity() {
-    let countryName = countryID.get("countryID");
+    let countryName = $("#search_country").attr('datasrc');
     let cityName = $("#search_city").val();
 
     if (countryName !== "" && countryName !== null && typeof countryName !== "undefined" &&
-        cityName !== "" && cityName !== null && typeof cityName !== "undefined")
-    {
+        cityName !== "" && cityName !== null && typeof cityName !== "undefined") {
         let searchParams = new Map();
         console.log(countryName + " " + cityName);
 
@@ -26,8 +25,18 @@ function searchByCity() {
         searchParams.set("city", cityName);
 
         callApis(searchParams, IS_NEED_LAT_LON.NO);
+        clearSearchValues();
+
     } else {
         alert("Select country name and Enter city name");
+        clearSearchValues();
     }
+
+}
+
+function clearSearchValues() {
+    $("#search_city").val("");
+    $("#search_country").val("");
+    $("#search_country").attr('datasrc', "");
 
 }

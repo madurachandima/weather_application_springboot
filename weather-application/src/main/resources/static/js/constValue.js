@@ -1,6 +1,5 @@
-
 const POST_GEO_API = "postcordinates";
-const POST_CITY_API="seacrhcityname";
+const POST_CITY_API = "seacrhcityname";
 
 const HTTP_METHOD = {
     GET: "get",

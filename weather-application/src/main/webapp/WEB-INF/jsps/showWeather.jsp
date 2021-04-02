@@ -48,12 +48,12 @@
             <div class="card2 col-lg-4 col-md-5">
                 <div class="row px-3">
                     <input type="text" placeholder="Search Country Name" class="mb-5"
-                           id="search_country" required>
+                           id="search_country" datasrc="">
                     </input>
                 </div>
                 <div class="row px-3">
                     <input type="text" name="location" placeholder="Search City Name" class="mb-5"
-                           id="search_city" required>
+                           id="search_city">
                     </input>
                 </div>
                 <div class="row">

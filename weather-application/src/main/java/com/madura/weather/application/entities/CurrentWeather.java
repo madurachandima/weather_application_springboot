@@ -1,4 +1,4 @@
-package com.madura.weather.application.controller.entities;
+package com.madura.weather.application.entities;
 
 import java.util.List;
 
@@ -59,4 +59,3 @@ public class CurrentWeather {
                 '}';
     }
 }
-

@@ -30,14 +30,13 @@ values = [
     {label: "New Zealand", id: "NZ"},
     {label: "South Africa", id: "ZA"},
 ];
-let countryID = new Map();
+
 $(function () {
     $("#search_country").autocomplete({
         source: values,
         select: function (event, ui) {
             $("#search_country").val(ui.item.label);
-            countryID.set("countryID", ui.item.id);
-            console.log(ui.item.id);
+            $("#search_country").attr('datasrc', ui.item.id);
             return false;
         }
     });

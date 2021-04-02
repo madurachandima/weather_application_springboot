@@ -1,4 +1,4 @@
-package com.madura.weather.application.controller.entities;
+package com.madura.weather.application.entities;
 
 public class WeatherModel {
     private double lat;
