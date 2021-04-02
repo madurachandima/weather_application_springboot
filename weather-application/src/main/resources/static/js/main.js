@@ -19,7 +19,6 @@ function searchByCity() {
     if (countryName !== "" && countryName !== null && typeof countryName !== "undefined" &&
         cityName !== "" && cityName !== null && typeof cityName !== "undefined") {
         let searchParams = new Map();
-        console.log(countryName + " " + cityName);
 
         searchParams.set("country", countryName);
         searchParams.set("city", cityName);

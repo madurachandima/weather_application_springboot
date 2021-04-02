@@ -48,7 +48,6 @@ public class AccessApi {
             String responseBody = EntityUtils.toString(httpResponse.getEntity());
             result = new JsonToObject().ObjectConverter(responseBody,classObject);
 
-            System.out.println("Response : " + responseBody);
 
         } catch (URISyntaxException | IOException e) {
             e.printStackTrace();

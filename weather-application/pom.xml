@@ -11,6 +11,7 @@
 	<groupId>com.madura</groupId>
 	<artifactId>weather-application</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 	<name>weather-application</name>
 	<description>Demo spring boot weather application</description>
 	<properties>
@@ -24,7 +25,6 @@
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-jasper</artifactId>
-			<scope>provided</scope>
 		</dependency>
 
 		<dependency>
@@ -32,7 +32,21 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
-
+		<!--		<dependency>-->
+		<!--			<groupId>javax.servlet.jsp.jstl</groupId>-->
+		<!--			<artifactId>jstl-api</artifactId>-->
+		<!--			<version>1.2</version>-->
+		<!--			<exclusions>-->
+		<!--				<exclusion>-->
+		<!--					<artifactId>servlet-api</artifactId>-->
+		<!--					<groupId>javax.servlet</groupId>-->
+		<!--				</exclusion>-->
+		<!--				<exclusion>-->
+		<!--					<artifactId>jsp-api</artifactId>-->
+		<!--					<groupId>javax.servlet.jsp</groupId>-->
+		<!--				</exclusion>-->
+		<!--			</exclusions>-->
+		<!--		</dependency>-->
 		<dependency>
 			<groupId>com.google.code.gson</groupId>
 			<artifactId>gson</artifactId>
@@ -59,6 +73,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<finalName>weather-application</finalName>
 	</build>
 
 </project>

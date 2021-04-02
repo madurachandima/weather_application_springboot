@@ -27,18 +27,12 @@ function callApis(requestData, isCallWeatherAPI) {
             crossDomain: true,
             dataType: "json",
             success: function (data, status, jqXHR) {
-                console.log(data)
                 getUiData(data);
             },
             error: function (jqXHR, status) {
-                console.log(jqXHR);
             }
         });
 
     } catch (e) {
-        console.log(e);
-    } finally {
-
     }
-
 }

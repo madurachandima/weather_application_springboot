@@ -19,8 +19,6 @@ public class ReturnWeatherResponse {
 
     public String returnWeatherResponse(String latitude, String longitude) throws IndexOutOfBoundsException {
 
-        System.out.println("LAT : " + latitude + " " + "LON : " + longitude);
-
         Map<String, String> weatherParamMap = new HashMap<>();
         weatherParamMap.put(ApiConstant.WEATHER_LATITUDE, latitude);
         weatherParamMap.put(ApiConstant.WEATHER_LONGITUDE, longitude);
